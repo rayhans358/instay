@@ -1,19 +1,15 @@
 {
   "version":2,
-  "builds": [
-    { 
-      "buildCommand": "cd client; npm install; ./node_modules/.bin/vite build",
-      "outputDirectory": "client/dist"
-    }
-  ],
-  "routes": [
+  "buildCommand": "cd client; npm install; ./node_modules/.bin/vite build",
+  "outputDirectory": "client/dist",
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/api/index.js"
+      "src": "/api/(*.)",
+      "dst": "/api/index.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/api/allRoutes.js"
+      "src": "/api/(*.)",
+      "dst": "/api/allRoutes.js"
     }
   ]
 }
