@@ -2,11 +2,13 @@
   "version":2,
   "buildCommand": "cd client; npm install; ./node_modules/.bin/vite build",
   "outputDirectory": "client/dist",
-  "builds": [
-    { "src": "/api/(.*)", 
-    "destination": "/api/index.js",
-      "use": "@vercel/vite" 
-    }
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {"source": "/(.*)", "destination": "/"}
   ],
   "routes": [
     {
