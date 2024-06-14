@@ -3,7 +3,7 @@
   "buildCommand": "cd client; npm install; ./node_modules/.bin/vite build",
   "outputDirectory": "client/dist",
   "builds": [
-    { "src": "/api/(.*)", 
+    { "src": "*.js", 
       "use": "@vercel/vite" 
     }
   ],
