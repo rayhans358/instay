@@ -2,3 +2,4 @@ api/node_modules
 api/.env
 client/node_modules
 client/.env
+api/uploads/*
