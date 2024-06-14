@@ -4,9 +4,9 @@
   "outputDirectory": "client/dist",
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/index.js"
+      "src": "/api/(.*)",
+      "dst": "/api/index.js"
     },
-    {"source": "/(.*)", "destination": "/"}
+    {"src": "/(.*)", "dst": "/"}
   ]
 }
