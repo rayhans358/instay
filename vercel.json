@@ -4,8 +4,12 @@
   "outputDirectory": "client/dist",
   "rewrites": [
     {
-      "src": "/api/(.*)",
+      "src": "/api/(*.)",
       "dst": "/api/index.js"
+    },
+    {
+      "src": "/api/(*.)",
+      "dst": "/api/allRoutes.js"
     },
     {"src": "/(.*)", "dst": "/"}
   ]
