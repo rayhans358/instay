@@ -3,14 +3,14 @@
   "buildCommand": "cd client && yarn install && ./node_modules/vite/bin/vite.js build",
   "outputDirectory": "client/dist",
   "builds": [
-    { "src": "/api/(*.js)", 
+    { "src": "/api/(.*)", 
       "use": "@vercel/vite" 
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/api/index.js"
     }
   ]
 }
