@@ -1,7 +1,10 @@
 {
-  "buildCommand": "cd client; npm install; npx vite build",
-  "outputDirectory": "client/dist",
-  "framework": "vite",
+  "version":2,
+  "builds": [
+    { "src": "*.js", 
+      "use": "@vercel/node" 
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
