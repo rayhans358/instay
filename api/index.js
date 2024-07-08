@@ -25,7 +25,7 @@ app.use("/", function (req, res) {
   });
 });
 
-app.use("/", function (req, res) {
+app.get("/", (req, res) => {
   res.send("Backend Instay running");
 });
 
