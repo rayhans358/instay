@@ -19,6 +19,15 @@ app.use(
 );
 
 app.use(allRoutes);
+app.use("/", function (req, res) {
+  res.render("index", {
+    title: "Cant get backend Instay",
+  });
+});
+
+app.use("/", function (req, res) {
+  res.send("Backend Instay running");
+});
 
 app.listen(4000, () => {
   console.log("Server is running on port 4000");
