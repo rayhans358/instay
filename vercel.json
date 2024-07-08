@@ -1,6 +1,6 @@
 {
   "version":2,
-  "buildCommand": "cd client; npm install; ./node_modules/.bin/vite build",
+  "buildCommand": "cd client; npm install; ./node_modules/bin/vite.js build",
   "outputDirectory": "client/dist",
   "framework": "vite",
   "rewrites": [
@@ -11,6 +11,7 @@
     {
       "source": "/api/(.*)",
       "destination": "/api/allRoutes.js"
-    }
+    },
+    {"source": "/(.*)", "destination": "/"}
   ]
 }
