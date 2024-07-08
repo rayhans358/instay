@@ -8,8 +8,8 @@
       "destination": "/api/index.js"
     },
     {
-      "src": "/api/allRoutes",
-      "dest": "/api/allRoutes.js"
+      "source": "/api/allRoutes",
+      "destination": "/api/allRoutes.js"
     },
     {"source": "/(.*)", "destination": "/"}
   ]
