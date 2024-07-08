@@ -1,15 +1,11 @@
 {
-  "buildCommand": "cd client; npm install; ./node_modules/vite/bin/vite.js build",
+  "buildCommand": "cd client; npm install; npx vite build",
   "outputDirectory": "client/dist",
   "framework": "vite",
   "rewrites": [
     {
       "source": "/api/index",
       "destination": "/api/index.js"
-    },
-    {
-      "source": "/api/allRoutes",
-      "destination": "/api/allRoutes.js"
     },
     {"source": "/(.*)", "destination": "/"}
   ]
