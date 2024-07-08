@@ -5,11 +5,11 @@
   "rewrites": [
     {
       "source": "/api/index",
-      "destination": "index.js"
+      "destination": "/api/index.js"
     },
     {
       "src": "/api/allRoutes",
-      "dest": "allRoutes.js"
+      "dest": "/api/allRoutes.js"
     },
     {"source": "/(.*)", "destination": "/"}
   ]
