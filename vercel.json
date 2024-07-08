@@ -8,10 +8,9 @@
       "destination": "/api/index.js"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
+  "routes": 
+  {
+    "src": "/(.*)",
+    "dest": "/"
+  }
 }
