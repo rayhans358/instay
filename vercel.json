@@ -8,6 +8,9 @@
       "source": "/api/(.*)",
       "destination": "/api/index.js"
     },
-    {"source": "/(.*)", "destination": "/"}
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/allRoutes.js"
+    }
   ]
 }
